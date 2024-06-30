@@ -1,0 +1,43 @@
+.header-top {
+    display: flex;
+    height: 42px;
+    font-size: 0.875rem;
+    background-color: #feddd6;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-top__svg {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    background-color: transparent;
+}
+
+.empty {
+    margin: 10px;
+    display: flex;
+    background-color: transparent;
+}
+
+.header-service__span {
+    font-size: 0.875rem;
+    background-color: transparent;
+}
+
+.header-top__button {
+    margin: 10px;
+    height: 32px;
+    display: flex;
+
+    /*margin: 0 auto;*/
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    /*text-align: center;*/
+}
