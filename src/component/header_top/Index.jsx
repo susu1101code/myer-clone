@@ -1,19 +1,17 @@
 import Image from "next/image";
-import DeliveryIcon from "./svg/DeliveryIcon";
-import FreeClickIcon from "./svg/FreeClickIcon";
 import ReturnIcon from "./svg/ReturnIcon";
 import styles from './HeaderTop.module.css'
-const HeaderTop = () => {
+const Index = () => {
     return (
         <section className={styles['header-top']}>
             <div className={styles['empty']}></div>
             <button className={styles['header-top__button']}>
-                <DeliveryIcon/>
+                <img src={"/deliveryIcon.svg"} className={styles['header-top__svg']} alt={''}></img>
                 <span className={styles['header-service__span']}>Free Delivery Over $99*</span>
             </button>
             <button className={styles['header-top__button']}>
-                <FreeClickIcon/>
-
+                <img src={"/freeClickIcon.svg"} className={styles["header-top__svg"]} alt={''}></img>
+                {/*<FreeClickIcon/>*/}
                 <span className={styles['header-service__span']}>Free Click & Collect</span>
             </button>
             <button className={styles['header-top__button']}>
@@ -25,4 +23,4 @@ const HeaderTop = () => {
     )
 }
 
-export default HeaderTop
+export default Index

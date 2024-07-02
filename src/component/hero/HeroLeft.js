@@ -1,4 +1,4 @@
-import styles from "@/pages/hero/Hero.module.css";
+import styles from "./Hero.module.css";
 
 const HeroLeft = () => {
   return (

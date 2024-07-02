@@ -1,15 +1,13 @@
 import Image from "next/image";
-import {Inter} from "next/font/google";
-import HeaderTop from "@/pages/header_top/HeaderTop";
-import Navbar from "@/pages/navbar/Navbar";
-import SearchSmall from "@/pages/navbar/search_small/SearchSmall";
-import NavCategories from "@/pages/navbar/NavCategories";
-import Hero from "@/pages/hero/Hero";
-import TopSales from "@/pages/topsales/TopSales";
-const inter = Inter({subsets: ["latin"]});
+import HeaderTop from "@/component/header_top/";
+import SearchSmall from "@/component/navbar/searchSmall";
+import NavCategories from "@/component/navbar/NavCategories";
+import Hero from "@/component/hero/";
+import TopSales from "@/component/topSales";
+import Navbar from "@/component/navbar";
 
 export default function Home() {
-    return (<body>
+    return (<section>
         <HeaderTop/>
         <main>
             <header>
@@ -22,5 +20,5 @@ export default function Home() {
         </main>
 
 
-        </body>);
+        </section>);
 }

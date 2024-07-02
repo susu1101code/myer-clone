@@ -1,8 +1,8 @@
 import styles from './Hero.module.css'
-import HeroLeft from "@/pages/hero/HeroLeft";
-import HeroRight from "@/pages/hero/HeroRight";
+import HeroLeft from "@/component/hero/HeroLeft";
+import HeroRight from "@/component/hero/HeroRight";
 
-const Hero = () => {
+const Index = () => {
     return (
         <section className={"hero"}>
             <p className={styles["hero-promotion__top"]}>STOCKTAKE SALE ON NOW</p>
@@ -14,4 +14,4 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export default Index

@@ -1,18 +1,18 @@
 import styles from '../Navbar.module.css'
-import Hamburger from "@/pages/navbar/svg/Hamburger";
-import Submit from "@/pages/navbar/svg/Submit";
+import Hamburger from "@images/hamburger.svg";
 
-const SearchSmall = () => {
+
+const Index = () => {
   return (
       <div className={styles["search-small"]}>
           <button>
-              <Hamburger/>
+              <img src={'/hamburger.svg'} alt={''}></img>
           </button>
           <input className={styles["navbar-search__input"]} type="text" name="search"
                  placeholder="Search for product or brand"/>
-          <Submit/>
+          <img src={'/submit.svg'} className={styles["navbar-search--submit"]} alt={''}></img>
       </div>
   )
 }
 
-export default SearchSmall
+export default Index
