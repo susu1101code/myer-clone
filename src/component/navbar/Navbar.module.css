@@ -33,6 +33,10 @@
     cursor: pointer;
 }
 
+.navbar-list__svg:hover{
+    color: red;
+}
+
 
 .search {
     display: flex;

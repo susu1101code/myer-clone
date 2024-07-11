@@ -1,13 +1,17 @@
 import styles from "./TopSales.module.css";
 import Image from "next/image";
 
-const ItemImg = ({imgUrl}) => {
+const ItemImg = ({ imgUrl }) => {
   return (
-      <div className={styles["top-sales__item-img-container"]}>
-          <Image className={styles["top-sales__item-img"]} src={imgUrl} alt={""} fill/>
+    <div className={styles["top-sales__item-img-container"]}>
+      <Image
+        className={styles["top-sales__item-img"]}
+        src={imgUrl}
+        alt={""}
+        fill
+      />
+    </div>
+  );
+};
 
-      </div>
-  )
-}
-
-export default ItemImg
+export default ItemImg;

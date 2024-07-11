@@ -7,18 +7,18 @@ import TopSales from "@/component/topSales";
 import Navbar from "@/component/navbar";
 
 export default function Home() {
-    return (<section>
-        <HeaderTop/>
-        <main>
-            <header>
-                <Navbar/>
-                <SearchSmall/>
-                <NavCategories/>
-            </header>
-            <Hero/>
-            <TopSales/>
-        </main>
-
-
-        </section>);
+  return (
+    <section>
+      <HeaderTop />
+      <main>
+        <header>
+          <Navbar />
+          <SearchSmall />
+          <NavCategories />
+        </header>
+        <Hero />
+        <TopSales />
+      </main>
+    </section>
+  );
 }
