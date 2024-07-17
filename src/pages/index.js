@@ -12,7 +12,7 @@ export default function Home() {
       <HeaderTop />
       <main>
         <header>
-          <Navbar />
+          <Navbar message={"test"} />
           <SearchSmall />
           <NavCategories />
         </header>

@@ -1,10 +1,10 @@
-async function fetchFromUrl(url) {
+export default async function FetchFromUrl(url) {
   try {
-    const response = fetch(url);
+    const response = await fetch(url);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    return response.json();
+    return await response.json();
   } catch (err) {
     console.error("Error fetching items:", err);
   }
