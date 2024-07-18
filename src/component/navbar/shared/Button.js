@@ -12,7 +12,7 @@ const Button = ({
   console.log("botton" + isDropdownOpen);
   function dropdownClickHandler() {
     {
-      if (isDropdownOpen) {
+      if (isDropdownOpen && dropdownContent === text) {
         closeDropdown();
       } else {
         openDropdown(text);
@@ -29,7 +29,10 @@ const Button = ({
         {text}
       </button>
       {isDropdownOpen && (
-        <NavDropdown text={text} closeDropdown={closeDropdown} />
+        <NavDropdown
+          dropdownContent={dropdownContent}
+          closeDropdown={closeDropdown}
+        />
       )}
 
       {/*  {expandType !== "" && expandType === text && (*/}

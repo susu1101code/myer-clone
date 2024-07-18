@@ -1,7 +1,7 @@
 import styles from "@/component/navbar/Navbar.module.css";
 import { useEffect, useRef } from "react";
 
-const NavDropdown = ({ text, closeDropdown }) => {
+const NavDropdown = ({ dropdownContent, closeDropdown }) => {
   const ref = useRef(null);
   useEffect(() => {
     // Bind the event listener
@@ -20,7 +20,7 @@ const NavDropdown = ({ text, closeDropdown }) => {
 
   return (
     <div ref={ref} className={styles["navbar-categories__dropdown"]}>
-      {text}
+      {dropdownContent}
     </div>
   );
 };
